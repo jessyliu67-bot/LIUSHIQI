@@ -10,7 +10,7 @@ BIG BANG is the existing local application for managing store entities, reviewin
 - Mappings: 300 existing store/template identities, each with Shopify and SHOPLINE resources; mapping identities are retained in data/bigbang.sqlite3 and resource paths.
 - Original compiled package: BIG_BANG_ORIGINAL_V35_COMPLETE.zip contains only BIG_BANG.exe. The original native launcher build source and reproducible build project were not included.
 
-The source uses its existing root-level Python modules and static frontend. These paths are runtime dependencies; do not move them solely to match a proposed directory layout. Platform-specific resources remain in the immutable V35 ZIP because the application reads that archive directly.
+The source uses its existing root-level Python modules and static frontend. These paths are runtime dependencies; do not move them solely to match a proposed directory layout. The exact V35 ZIP bytes are stored as `resources/BIG_BANG_V35_DUAL_600.zip.xz` to fit the repository upload transport. `python scripts/materialize_resources.py` restores the original `resources/BIG_BANG_V35_DUAL_600.zip` path and verifies its SHA-256 before use; application startup also restores it automatically when needed. This does not alter the archive contents or the 300 fixed mappings.
 
 ## Platform behavior
 
@@ -37,7 +37,7 @@ For isolated development, set BIGBANG_DATA_DIR to a disposable data directory co
 Install development dependencies with python -m pip install -r requirements-dev.txt, then run:
 
     python scripts/verify_release.py
-python scripts/run_regression_tests.py
+    python scripts/run_regression_tests.py
 
 CI also compiles all Python, checks JavaScript syntax, runs browser layout checks at the configured viewport sizes, and builds and smoke-tests a Windows package. A test with mocked APIs is labelled as simulated. A real platform test requires an authorized test store and is reported separately.
 

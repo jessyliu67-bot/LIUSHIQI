@@ -1,0 +1,15 @@
+{
+  "resource_version": "V35",
+  "resource_sha256": "b5686ae01ffdcfee0746ed7e1d34fc3acb291ab5d0d02d98a3bfdb2f13af7aac",
+  "source_exports_passed": 600,
+  "configured_sample_exports_passed": 40,
+  "txt_encodings_passed": 4,
+  "layout_checks_passed": null,
+  "errors": [],
+  "windows_exe_run_tested": false,
+  "live_shopline_tested": false,
+  "native_product_handles_matched_to_published_csv": 2400,
+  "shopline_homepages_verified": 300,
+  "offline_mocked_product_cases_passed": 120,
+  "prior_v34_layout_preserved": true
+}

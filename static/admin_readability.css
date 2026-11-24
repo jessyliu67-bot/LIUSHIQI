@@ -1,0 +1,49 @@
+/* BIG BANG V10.6 — global admin typography accessibility pass.
+   Loaded after V9 visual theme. Keeps workflows & DOM unchanged. */
+:root{--v9-muted:#49505d;--v9-ink:#1b2430;--v9-blue:#0759bb}
+body{font-size:16px!important;line-height:1.6!important}
+.sidebar .brand-en{font-size:12px!important;color:#404c61!important}
+.sidebar .nav-item .nav-label b{font-size:15px!important;color:inherit!important}
+.topbar .top-title{font-size:19px!important}
+.topbar :is(.system-pill,.user-chip,.clock-mark){font-size:14px!important;color:#39485b!important}
+.topbar .top-logout{font-size:14px!important}
+.v4-search-trigger{font-size:14px!important;color:#384a63!important}
+.v9-kicker{font-size:13px!important;color:#3d4d62!important}
+.v9-hero p{font-size:16px!important;color:#3d4b60!important}
+.v9-hero-caption,.v9-metric-header{font-size:14px!important;color:#3d4b5d!important}
+.v9-hero-note{font-size:13px!important;color:#435269!important}
+.v9-primary,.v9-subtle{font-size:15px!important;min-height:46px}
+.v9-panel-head p{font-size:15px!important;color:#415166!important;line-height:1.7}
+.v9-textlink{font-size:14px!important}
+.v9-matrix-filters button,.v9-matrix-filters>span{font-size:14px!important;color:#3f4d60!important}
+.v9-matrix-key{font-size:13px!important;color:#425167!important}
+.v9-metric-header{line-height:1.55}
+.v9-node{font-size:11px!important}
+.app-foot{font-size:13px!important;color:#40516a!important}
+/* Accommodate legacy delivery & batch forms which still render too small. */
+.v5-workspace{font-size:15px!important}
+.v5-workspace :is(input,textarea,select){font-size:15px!important;line-height:1.55!important}
+.v5-workspace :is(.btn,button){font-size:14px!important;line-height:1.5!important;min-height:42px}
+.v5-workspace :is(.v5-top p,.v5-card-title p){font-size:15px!important;line-height:1.72!important}
+.v5-workspace :is(.v5-kicker,.v7-tag,.v8-overline,.v8-top-status){font-size:13px!important;letter-spacing:.03em!important}
+.v5-workspace :is(.v8-evidence-row strong,.v8-evidence-row>span,.v8-field-status>span,.v8-field-status small,.v8-source-panel>summary,.v8-evidence,.v8-evidence.muted,.v8-evidence.warn,.v8-alert,.v8-disclaimer,.v8-check-errors p,.v8-warnings,.v8-check-bottom span,.v8-domain-chip,.v8-no-domains,.v8-source-panel>summary span:last-child,.v8-evidence-head span,.v8-file-strip>span,.v8-file-strip small){font-size:14px!important;line-height:1.65!important}
+.v5-workspace :is(.v7-title p,.v7-source-detail,.v7-tile-meta span,.v7-tile-meta small,.v7-tile-meta b,.v7-origin,.v7-thumb-copy span){font-size:13px!important;line-height:1.55!important}
+.v5-workspace :is(.v8-check-head h3,.v7-title h3){font-size:19px!important}
+.v5-workspace :is(.v5-input>span,.v5-progress b,.v5-progress>div,.v5-card h3,.v5-card-title h2){font-size:15px!important}
+.v5-workspace :is(.v5-top p,.v5-card-title p,.v8-source-panel>summary,.v7-title p){color:#435066!important}
+/* Only apply pale text within legacy dark workbench. Light V9 panels use dark text. */
+.v9-page :is(p,small,label){color:#34465e}
+@media(max-width:640px){body{font-size:15px!important}.content{padding:24px 16px 45px!important}.v9-hero{padding:29px 25px!important}.v9-white-panel{padding:23px!important}.v5-workspace :is(input,textarea,select){font-size:16px!important}}
+/* The oversized muted headline looked washed out: keep it near-black. */
+.v9-hero h1 span{color:#212631!important;font-weight:600!important}
+.v9-hero-note,.v9-panel-head p,.v9-hero-caption{color:#34445a!important}
+.v9-matrix-filters>span,.v9-textlink{font-size:14px!important}
+
+/* V35: original light workbench, readable labels and upload hints. */
+.v5-workspace{--v5-ink:#202833;--v5-muted:#455369;color:#202833!important}
+.v5-workspace .v5-card :is(.v5-input>span,.v5-entity-fields>summary,.v5-entity-fields>summary span,.v5-upload small,.v5-card-title p,.v5-domain-meta,.v8-source-panel>summary span:first-child){color:#435066!important;opacity:1!important}
+.v5-workspace .v5-card .v5-upload b{color:#202833!important}
+.v5-workspace .v5-card .v8-source-panel>summary span:last-child{color:#0759bb!important}
+.v5-workspace .v5-card .v5-entity-ok{color:#e7f8eb!important;background:#183326!important}
+.v5-workspace .v5-card .v5-input input{color:#202833!important}
+@media(max-width:700px){.v5-workspace .v5-fields,.v5-workspace .v5-left,.v5-workspace .v5-columns{grid-template-columns:minmax(0,1fr)!important}.v5-workspace .v5-card{min-width:0;padding:20px 15px!important}.v5-workspace .v5-upload{padding:20px 12px!important}}

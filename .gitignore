@@ -1,0 +1,27 @@
+# Local credentials and state
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+data/*
+!data/bigbang.sqlite3
+!data/ASSET_MANIFEST.json
+resources/BIG_BANG_V35_DUAL_600.zip
+# The two exceptions are CLEAN seed files only; never commit a running database.
+# Prefer moving runtime state outside the repository via BIGBANG_DATA_DIR.
+desktop_initialized.json
+_local_backups/
+_migration_*/
+_clean_seed_*/
+_failed_import_*/
+build/
+dist/
+*.exe
+*.log

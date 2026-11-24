@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>大爆炸 · 运行准备中心</title><link rel="stylesheet" href="/static/quality.css"><script src="/static/quality.js" defer></script></head>
+<body><div class="page">
+<header class="top"><a href="/" class="back" aria-label="返回大爆炸主界面">← 返回总控台</a><span class="eyebrow">BIG BANG / SYSTEM READINESS</span><span id="lastRefresh">尚未检查</span></header>
+<div class="intro"><div><p class="eyebrow">V35 · RELEASE READINESS</p><h1>运行准备中心</h1><p class="lead">把系统状态、300套资源、未来模板更新与平台适配放在一处检查。检查只读，不会更改已有主体、店铺分配或原始资源。</p></div><button id="refresh" class="primary">重新检查系统</button></div>
+<div id="banner" class="banner">正在读取本地系统状态…</div>
+<section class="numbers" id="numbers"></section>
+<div class="two">
+<section class="panel"><h2>系统诊断</h2><div id="diagnostics" class="lines">正在检查数据库和资产哈希…</div><p class="fine">诊断不代表实际Shopify/SHOPLINE页面、图片授权或官方广告审核已通过。</p></section>
+<section class="panel"><h2>平台能力边界</h2><div id="platforms" class="lines">正在读取平台适配状态…</div><p class="fine">SHOPLINE新主题采用Sline，暂不将Liquid自动宣称为兼容。</p></section>
+</div>
+<section class="panel"><div class="panelhead"><div><h2>V35双平台600份交付组合体检</h2><p>核对300组模板：Shopify每组12份文件，SHOPLINE每组11份文件；不修改原始ZIP。</p></div><button id="exportReport" class="secondary" disabled>下载质检JSON</button></div><div id="scanSummary" class="lines">正在执行结构与CSV字段检查…</div><input id="filter" class="filter" placeholder="按目录名称筛选300套资源" aria-label="查找资源"/><div class="tableScroll"><table><thead><tr><th>模板目录</th><th>文件</th><th>SKU行</th><th>图片URL</th><th>检查结果</th></tr></thead><tbody id="assetRows"></tbody></table></div></section>
+<section class="panel"><div class="panelhead"><div><h2>预检下一批300套模板</h2><p>上传未来新版ZIP，先检测数量、结构和原目录映射。此操作绝不替换已有300套组合。</p></div></div><div class="upload"><input id="candidate" type="file" accept=".zip" aria-label="选择未来模板ZIP"/><button class="primary" id="compare" disabled>对比新版资源</button></div><div id="compareResult" class="fine">尚未选择文件。将来收到新资源时，可先在这里检查，再决定是否迁移。</div></section>
+<footer><span>BIG BANG · LOCAL SYSTEM</span><span>此中心只做检查和预检，不做线上部署、法律认证或商标授权判断。</span></footer>
+</div></body></html>

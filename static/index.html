@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light" />
+<title>大爆炸 BIG BANG — 原系统 V35</title>
+<link rel="stylesheet" href="/static/styles.css" />
+<link rel="stylesheet" href="/static/v2.css" />
+<script src="/static/app.js?v=35-final" defer></script>
+<link rel="stylesheet" href="/static/v3.css"/>
+<script src="/static/v3.js" defer></script>
+<link rel="stylesheet" href="/static/bulk.css"/>
+<script src="/static/bulk.js" defer></script>
+<link rel="stylesheet" href="/static/v4.css"/>
+<script src="/static/v4.js" defer></script>
+<link rel="stylesheet" href="/static/v5.css"/><script src="/static/v5.js?v=34" defer></script>
+<link rel="stylesheet" href="/static/v6.css"/>
+<script src="/static/v6.js" defer></script>
+<link rel="stylesheet" href="/static/v7.css"/>
+<script src="/static/v7.js?v=34" defer></script>
+<link rel="stylesheet" href="/static/v8.css"/>
+<script src="/static/v8.js" defer></script>
+<link rel="stylesheet" href="/static/v9.css"/><link rel="stylesheet" href="/static/admin_readability.css?v=35-final"/><script src="/static/v9.js" defer></script>
+<style>
+.bb-onboard.hidden{display:none!important}
+.bb-onboard{position:fixed;inset:0;background:rgba(13,20,30,.86);z-index:999999;display:grid;place-items:center;padding:20px;font-family:Arial,sans-serif}
+.bb-onboard-card{width:min(100%,560px);background:#f5f2ed;color:#17202b;border:1px solid #9aa5b2;padding:clamp(25px,5vw,48px);box-shadow:0 18px 75px #0005}
+.bb-onboard-kicker{letter-spacing:.12em;font:700 11px/1.5 Arial,sans-serif;color:#42627d}
+.bb-onboard h2{font:700 clamp(27px,5vw,42px)/1.1 Arial,sans-serif;margin:18px 0}
+.bb-onboard p{line-height:1.65;color:#4a5865;font-size:15px;margin:0 0 18px}
+.bb-onboard form label{display:block;font:700 12px/1.4 Arial,sans-serif;letter-spacing:.07em;margin:14px 0 8px}
+.bb-onboard form input{border-radius:0;border:1px solid #8493a4;background:white;color:#101820;padding:14px;width:100%;font:15px Arial,sans-serif;min-height:48px}
+.bb-onboard button{display:block;border-radius:0;background:#142539;color:white;border:0;min-height:50px;width:100%;margin-top:14px;font:700 15px Arial,sans-serif;cursor:pointer}
+.bb-onboard button:disabled{opacity:.55;cursor:wait}
+.bb-onboard small{display:block;margin-top:12px;color:#526476;font:12px/1.6 Arial,sans-serif}
+.bb-onboard .bb-onboard-error{color:#b52d25;margin:12px 0 0}
+body.bb-desktop-mode .top-logout{display:none!important}
+</style>
+</head>
+<body>
+<div id="bb-onboard" class="bb-onboard hidden" role="dialog" aria-modal="true" aria-labelledby="bb-onboard-title">
+  <div class="bb-onboard-card">
+    <div class="bb-onboard-kicker">BIG BANG / ORIGINAL CONTROL SYSTEM / V35</div>
+    <h2 id="bb-onboard-title">连接 DeepSeek API</h2>
+    <p>只需在这里输入一次 API Key。主体、店铺、模板、双平台资源和原有工作台功能都在原系统中。</p>
+    <form id="bb-onboard-form">
+      <label for="bb-key">DEEPSEEK API KEY</label>
+      <input id="bb-key" name="bb-key" type="password" minlength="12" autocomplete="off" spellcheck="false" required placeholder="输入 DeepSeek API Key" />
+      <button id="bb-save-key" type="submit">保存并进入大爆炸</button>
+      <p id="bb-setup-error" class="bb-onboard-error" role="alert"></p>
+    </form>
+    <small>密钥仅保存在你的 Windows 本地程序配置中，不会显示在页面上。商户发布仍需要店铺授权。</small>
+  </div>
+</div>
+<div id="login" class="login-screen hidden">
+  <div class="login-left">
+    <div class="brand-overline">BIG BANG / STORE INTELLIGENCE PLATFORM</div>
+    <div class="login-universe" aria-hidden="true"><div class="uni-grid"></div><div class="uni-ring ring-1"></div><div class="uni-ring ring-2"></div><div class="uni-ring ring-3"></div><div class="uni-core">B<span>B</span></div><span class="uni-satellite satellite-1"></span><span class="uni-satellite satellite-2"></span></div>
+    <div class="login-content"><div class="login-index">01 / ONE SYSTEM. INFINITE CONTROL.</div><h1>大爆炸<span>BIG BANG<span class="login-period">.</span></span></h1><p>将三百家店铺的复杂运营，<br>汇聚成一个清晰的控制中心。</p></div>
+    <div class="login-foot"><span>ASSETS / 300</span><span>IDENTITY MANAGEMENT</span><span>AI AUDIT ENGINE</span></div>
+  </div>
+  <div class="login-right">
+    <div class="login-box"><div class="login-kicker"><span class="login-green-dot"></span> RESTRICTED ACCESS / ADMIN</div><h2>欢迎回到控制中心</h2><p>登录并继续管理你的店铺宇宙。</p>
+      <form id="login-form"><label for="password">ADMIN PASSWORD</label><input id="password" type="password" autocomplete="current-password" required placeholder="输入管理员密码"/><button class="btn btn-dark full" type="submit"><span>进入大爆炸</span><span>↗</span></button></form>
+      <div id="login-error" class="login-error"></div><div class="login-notice"><span class="tiny-line"></span> 本地管理员模式 · 正式上线前需完成安全加固</div>
+    </div>
+    <div class="login-right-foot">BIG BANG © 2026 <span>VERSION 11.4.3 / V35</span></div>
+  </div>
+</div>
+<div id="shell" class="shell hidden">
+  <aside class="sidebar">
+    <div class="sidebar-head">
+      <div class="bb-symbol" aria-hidden="true"><span>B</span><span>B</span></div>
+      <div><div class="brand-cn">大爆炸</div><div class="brand-en">BIG BANG / CONTROL</div></div>
+    </div>
+    <div class="side-version"><span class="tiny-line"></span> SYSTEM CONSOLE <span class="side-vnum">V35</span></div>
+    <div class="side-caption">工作空间 / WORKSPACE</div>
+    <nav id="nav"><button class="nav-item active" data-page="overview"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><span class="nav-label"><b>指挥总览</b><small>OVERVIEW</small></span><span class="nav-arrow">↗</span></button>
+<button class="nav-item " data-page="entities"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="1.5"><rect x="3" y="7" width="18" height="14"/><path d="M7 7V3h10v4M7 12h2m3 0h2m3 0h2M7 16h2m3 0h2m3 0h2"/></svg></span><span class="nav-label"><b>公司主体</b><small>ENTITIES</small></span><span class="nav-arrow">↗</span></button>
+<button class="nav-item " data-page="stores"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="1.5"><path d="M3 9l2-5h14l2 5v3H3zM5 12v9h14v-9M9 21v-6h6v6"/></svg></span><span class="nav-label"><b>店铺与域名</b><small>STORES</small></span><span class="nav-arrow">↗</span></button>
+<button class="nav-item " data-page="templates"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="1.5"><path d="M12 2 3 7l9 5 9-5-9-5ZM3 12l9 5 9-5M3 17l9 5 9-5"/></svg></span><span class="nav-label"><b>模板资产</b><small>ASSETS</small></span><span class="nav-arrow">↗</span></button>
+<button class="nav-item " data-page="audits"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="1.5"><path d="M12 2 4 6v6c0 5 3.3 8.3 8 10 4.7-1.7 8-5 8-10V6l-8-4Z"/><path d="m8.7 12 2.3 2.3 4.5-5"/></svg></span><span class="nav-label"><b>AI 审核中心</b><small>AUDIT INTELLIGENCE</small></span><span class="nav-arrow">↗</span></button>
+<a class="nav-item" href="/quality" style="text-decoration:none;color:inherit"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4zM7 12l3 3 7-7"/></svg></span><span class="nav-label"><b>运行准备中心</b><small>HEALTH & READINESS</small></span></a>
+<a class="nav-item" href="/platform-assets" style="text-decoration:none;color:inherit"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="18"/><rect x="14" y="3" width="7" height="18"/></svg></span><span class="nav-label"><b>双平台资源中心</b><small>SHOPIFY / SHOPLINE</small></span></a>
+<button class="nav-item " data-page="settings"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="1.5"><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></svg></span><span class="nav-label"><b>系统设置</b><small>SETTINGS</small></span><span class="nav-arrow">↗</span></button></nav>
+    <div class="side-quick"><div class="side-quick-kicker">OPERATIONS</div><strong>全局统一管理</strong><p>300个独立资产，<br>一套精准的审核流程。</p><span class="side-quick-line"></span><span class="side-quick-ref">BUILT FOR SCALE / 001—300</span></div>
+    <div class="sidebar-bottom"><div class="side-status"><span class="status-led"></span> 本地系统运行中</div><div class="side-small">PRIVATE INSTANCE <span>•</span> 2026</div></div>
+  </aside>
+  <div class="main-area">
+    <header class="topbar">
+      <div class="top-left"><button id="mobile-menu" class="mobile-menu" aria-label="切换菜单">☰</button><div class="top-loc"><div class="eyebrow" id="top-eyebrow">CONTROL ROOM / 01</div><div class="top-title" id="top-title">全局指挥中心</div></div></div>
+      <div class="top-right"><span class="system-pill"><span class="status-led"></span> SYSTEM ONLINE</span><span class="clock-mark" id="today-label"></span><span class="user-chip">AD<span>MIN</span></span><button class="top-logout" data-action="logout">退出 ↗</button></div>
+    </header>
+    <main class="content" id="content" aria-live="polite"></main>
+    <footer class="app-foot"><span>BIG BANG / INTELLIGENT COMMERCE OPERATIONS</span><span>LOCAL WORKSPACE · V35</span></footer>
+  </div>
+</div>
+<div id="drawer-root"></div><div id="toast-root" role="status" aria-live="polite"></div>
+<input id="template-picker" type="file" accept=".zip,application/zip" hidden />
+<input id="csv-picker" type="file" accept=".csv,text/csv" hidden />
+<input id="bb-upload-input" type="file" accept=".zip,.csv,.txt,.docx,.pdf,.png,.jpg,.jpeg" multiple hidden />
+<input id="v3-intake-input" type="file" accept=".txt,.pdf,.png,.jpg,.jpeg" hidden />
+<input id="doc-picker" type="file" accept=".txt,.pdf,.png,.jpg,.jpeg" hidden />
+</body>
+</html>

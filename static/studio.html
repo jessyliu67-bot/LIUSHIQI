@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>BIG BANG · Store Studio</title><link rel="stylesheet" href="/static/studio.css"><link rel="stylesheet" href="/static/studio_readability.css"><script defer src="/static/studio.js"></script></head>
+<body data-store="STORE-001"><div class="studio-shell">
+ <aside class="sidebar"><div class="brand"><div class="brand-mark">B<span>B</span></div><div><b>大爆炸</b><small>BIG BANG / STUDIO</small></div></div>
+ <div class="nav-caption">工作空间</div><a class="nav-entry" href="/"> <span class="nav-ico" data-icon="back"></span>返回总控台</a><a class="nav-entry current" id="nav-store" href="#"><span class="nav-ico" data-icon="layers"></span>当前店铺工作室</a><a class="nav-entry" id="nav-preview" href="#"><span class="nav-ico" data-icon="monitor"></span>网页效果预览</a><a class="nav-entry" id="nav-audit" href="#"><span class="nav-ico" data-icon="shield"></span>AI 严格审核</a>
+ <div class="side-bottom"><div class="side-hint">资源来源<br><strong>Shopify 300 V35</strong></div><p>原始文件只读。所有更改保存在工作副本中。</p></div>
+ </aside>
+ <main class="workspace">
+  <header class="topbar"><div><span class="eyebrow">BIG BANG <span class="slash">/</span> V11 POLICY STUDIO</span><h1>店铺工作室</h1><p id="store-subtitle">正在读取资源与主体配置…</p></div><div class="topactions"><a href="/" class="btn ghost" id="back-top">返回总览</a><button class="btn light" id="draft-download">导出工作副本</button><button class="btn primary" id="one-click-policy">一键填充政策并生成ZIP</button></div></header>
+  <section class="overview-strip"><div><span>店铺</span><strong id="stat-store">—</strong></div><div><span>源文件</span><strong id="stat-files">—</strong></div><div><span>商品行数</span><strong id="stat-products">—</strong></div><div><span>当前修改</span><strong id="stat-edits">—</strong></div><div class="source-badge"><span class="dot"></span><span id="source-caption">V35最新资源</span></div></section>
+  <div class="surface-grid">
+   <aside class="file-column"><div class="column-heading"><div><span class="eyebrow">SOURCE LIBRARY</span><h2>文件与资源</h2></div><span id="count-label">12份</span></div>
+    <div class="file-list" id="file-list"><p class="skeleton">正在读取文件清单…</p></div>
+    <div class="library-tip">政策文件的内容可以编辑工作副本；原始ZIP始终保留。修改后请重新运行DeepSeek复检。</div>
+   </aside>
+   <section class="center-column">
+    <nav class="tabs" id="tabs"><button class="active" data-tab="overview">店铺总览</button><button data-tab="editor">文件编辑</button><button data-tab="products">对应商品</button><button data-tab="preview">网页预览</button><button data-tab="history">版本记录</button></nav>
+    <div class="tab-content" id="tab-content"><p class="skeleton">加载中…</p></div>
+   </section>
+   <aside class="review-column"><header class="column-heading"><div><span class="eyebrow">QUALITY REVIEW</span><h2>AI审核中心</h2></div><span class="review-live" id="ai-status">待连接</span></header>
+    <div class="review-scroll"><div id="review-controls"><p class="muted">规则引擎检查真实文件；DeepSeek按文件逐份分析政策、装修与商品内容。</p><div class="checkline"><label><input type="checkbox" id="use-ai" checked>DeepSeek逐项审核</label></div><div class="checkline"><label><input type="checkbox" id="check-links">检测前15张图片URL响应</label></div><div class="checkline"><label><input type="checkbox" id="use-vision">允许AI分析最多2张图片</label></div><button class="btn primary wide" id="run-audit-side">立即检查当前店铺</button><button class="btn light wide" id="one-click-policy-side">一键填充七份政策＋页脚并打包</button></div>
+     <div class="review-result" id="review-result"><p class="muted">尚无本次检查结果。点击审核后，将显示具体文件、原文证据和修复建议。</p></div>
+     <div class="fineprint">AI审核属于内部预审，不等于官方广告批准、图片授权证明或法律意见。真实商品规格仍需核验。</div>
+    </div>
+   </aside>
+  </div>
+  <footer class="footbar"><span>BIG BANG STUDIO · 来源文件保持不变</span><div><span id="save-status">当前未修改</span><button class="btn primary" id="one-click-policy-footer">一键完成政策与交付</button></div></footer>
+ </main>
+</div><div id="modal-host"></div><div id="toast" role="status" aria-live="polite"></div></body></html>

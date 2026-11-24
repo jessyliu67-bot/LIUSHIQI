@@ -1,0 +1,91 @@
+/* BIG BANG V10.6 — Readability & Contrast Design Layer
+   High contrast typography, spacious rhythm, accessible controls.
+   Deliberately last in cascade; does not change data or API behavior. */
+:root{--ink:#17212e;--muted:#3f4c60;--line:#dce2ea;--blue:#075ac3;--pale:#eaf2fd;--shadow:0 8px 28px rgba(22,32,48,.055)}
+body{font-size:16px;line-height:1.66;letter-spacing:0;color:var(--ink)}
+.workspace{padding-top:40px}
+.brand small{font-size:12px;letter-spacing:.045em;color:#47566a}
+.nav-caption,.eyebrow{font-size:13px;letter-spacing:.055em;color:#45546a;font-weight:650}
+.nav-caption{margin-bottom:14px}
+.nav-entry{font-size:15px;padding:15px 13px;color:#304052;min-height:50px}
+.side-bottom{font-size:14px;color:#35445a}
+.topbar{margin-bottom:30px}
+.topbar h1{font-size:clamp(31px,2.65vw,42px);line-height:1.19}
+.topbar p{font-size:15px;color:#40516a;line-height:1.65}
+.slash{color:#536277}
+.btn{font-size:14px;font-weight:600;padding:12px 18px;min-height:45px;border-radius:5px;line-height:1.35}
+.btn.ghost{color:#2d4059}.btn.light{color:#1c2e45;border-color:#cbd5e2}
+.overview-strip{margin-bottom:25px}
+.overview-strip>div{padding:20px 23px;gap:7px}
+.overview-strip span{font-size:14px;color:#405068}
+.overview-strip strong{font-size:27px;font-weight:650}
+.overview-strip #source-caption{color:#176748;font-size:14px;font-weight:600}
+.surface-grid{gap:20px;grid-template-columns:minmax(228px,270px) minmax(390px,1fr) minmax(305px,365px)}
+.column-heading{padding:26px 23px 19px}
+.column-heading h2{font-size:21px;font-weight:650;letter-spacing:-.025em}
+.column-heading>span,.review-live{font-size:13px;color:#41516a}
+.file-list{padding:3px 14px 24px}
+.file-group h3{font-size:14px;color:#35465d;margin:19px 10px 10px}
+.file-row{padding:13px 10px;gap:12px;color:#273b53;min-height:45px}
+.file-row .name{font-size:14px;line-height:1.5}
+.file-row .modified{font-size:12px;padding:3px 6px;color:#17519a}
+.library-tip{font-size:14px;color:#394b64;line-height:1.8;padding-top:19px}
+.tabs{padding:0 16px}
+.tabs button{font-size:14px;font-weight:550;color:#394a63;padding:20px 14px 17px;min-height:58px}
+.tabs button.active{color:#075ac3;font-weight:650}
+.tab-content{padding:30px clamp(20px,2.2vw,36px)}
+.tab-content h2{font-size:23px;line-height:1.35}
+.tab-content h3{font-size:18px;margin-top:28px}
+.muted,.subtle{font-size:15px;line-height:1.75;color:#41516a}
+.pill{font-size:13px;color:#334761;padding:7px 10px}
+.overview-card{gap:17px;margin:25px 0}
+.overview-card>div{padding:20px}
+.overview-card label{font-size:14px;color:#3e5069}
+.overview-card strong{font-size:16px;line-height:1.6}
+.fact-list>div{padding:16px 17px;align-items:baseline}
+.fact-list>div span{font-size:14px;color:#354963;width:125px}
+.fact-list strong{font-size:15px;line-height:1.6}
+.notice{font-size:14px;line-height:1.78;padding:15px 16px;color:#293f59}
+.editor-head span{font-size:14px;color:#40516a}
+.code-editor{font-size:14px;line-height:1.74;color:#172b42;padding:19px;min-height:510px}
+.instruction-box{font-size:15px;line-height:1.7;padding:14px}
+.product-table{font-size:14px}
+.product-table th{color:#35465e;font-weight:650;padding:14px 11px}
+.product-table td{padding:14px 11px;color:#22344a;line-height:1.55}
+.product-table .product-name{max-width:245px}
+.preview-note{font-size:14px;color:#344960;line-height:1.7;padding:15px 16px}
+.segment button{font-size:14px;padding:10px 15px;min-height:41px;color:#2b405a}
+.review-scroll{padding:0 23px 28px}
+.checkline{font-size:15px;padding:14px 0;color:#22344b;line-height:1.6}
+.checkline input{width:17px;height:17px;vertical-align:middle}
+.review-result{padding-top:24px;margin-top:24px}
+.review-stat>div{padding:16px 8px}
+.review-stat strong{font-size:25px}
+.review-stat span{font-size:13px;color:#3c5069}
+.issue-list{gap:13px}
+.issue-item{padding:17px 15px}
+.issue-item h4{font-size:15px;line-height:1.55;font-weight:650}
+.issue-item p{font-size:14px;color:#364a62;line-height:1.75}
+.issue-item .issue-meta{font-size:13px;color:#475973}
+.issue-item .issue-meta button{font-size:14px}
+.sev{font-size:12px;padding:4px 8px}
+.fineprint{font-size:13px;color:#445770;line-height:1.8}
+.footbar{font-size:13px;color:#45576e;padding:24px 0}
+.modal h2{font-size:23px}
+.modal pre{font-size:13px;line-height:1.8}
+.modal .kv{font-size:15px;grid-template-columns:150px 1fr;line-height:1.65}
+#toast{font-size:14px;line-height:1.6}
+.skeleton{font-size:14px;color:#465773}
+.history-row{font-size:14px;padding:17px 0}
+.history-row .meta{font-size:13px}
+.smalllink,.source-link{font-size:14px}
+/* Preserve contrast on every white / light-gray surface, including details created dynamically. */
+.file-column,.center-column,.review-column,.modal{color:#17212e}
+.center-column :is(label,small),.review-column small,.file-column small{color:#394c65}
+:where(input,textarea,select)::placeholder{color:#58687b;opacity:1}
+/* On any genuinely dark alert or code surface, force readable light text. */
+.modal pre{background:#142033;color:#f4f7fb}
+@media(max-width:1450px){.surface-grid{grid-template-columns:minmax(225px,270px) minmax(0,1fr)}.review-scroll{grid-template-columns:minmax(265px,330px) 1fr}}
+@media(max-width:980px){.surface-grid{grid-template-columns:minmax(0,1fr)}.file-list{grid-template-columns:repeat(2,minmax(0,1fr))}.workspace{padding:27px 22px 0}}
+@media(max-width:640px){.workspace{padding:23px 16px 0}.topbar h1{font-size:32px}.topbar p{font-size:15px}.topactions .btn{font-size:14px}.overview-strip>div{padding:17px}.overview-strip span{font-size:13px}.overview-strip strong{font-size:24px}.tabs button{font-size:14px;padding:15px 12px;min-height:49px}.tab-content{padding:22px 18px}.column-heading{padding:21px 18px 15px}.file-list{display:block}.review-scroll{display:block;padding:0 18px 23px}.modal .kv{grid-template-columns:1fr;gap:4px}.fact-list>div span{width:104px}.footbar{gap:17px}.footbar>div{flex-wrap:wrap;gap:8px}.btn{font-size:14px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

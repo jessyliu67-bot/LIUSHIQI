@@ -1,0 +1,8 @@
+BIG BANG V35 is the existing local management application and offline resource exporter.
+The clean seed database contains 300 stable store/template identities.
+The canonical V35 archive contains 300 Shopify bundles and 300 SHOPLINE bundles.
+Shopify bundles contain 4 Liquid files, 1 CSV, and 7 policy files.
+SHOPLINE bundles contain 3 SLINE files, 1 migration CSV, and 7 policy files.
+SHOPLINE product loading uses native all_products reads and keeps a configured fallback.
+Offline resource checks do not prove live storefront rendering, product import, image rights, legal correctness, or platform approval.
+The separately supplied original executable has no included native launcher source or reproducible build project.
