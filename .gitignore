@@ -14,6 +14,7 @@ data/*
 !data/bigbang.sqlite3
 !data/ASSET_MANIFEST.json
 resources/BIG_BANG_V35_DUAL_600.zip
+resources/BIG_BANG_V35_DUAL_600.zip.xz
 # The two exceptions are CLEAN seed files only; never commit a running database.
 # Prefer moving runtime state outside the repository via BIGBANG_DATA_DIR.
 desktop_initialized.json
